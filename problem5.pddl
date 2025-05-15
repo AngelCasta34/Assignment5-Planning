@@ -12,6 +12,7 @@
     (connected r1  hw1) (connected hw1 r1)
     (connected hw1 hw2) (connected hw2 hw1)
     (connected r2  hw2) (connected hw2 r2)
+    (connected r5  hw2) (connected hw2 r5)
 
     ;; these three are locked initially
     (locked-door hw2 hw3) (locked-door hw3 hw2)
@@ -25,7 +26,6 @@
 
     ;; other open connections
     (connected r3  hw3) (connected hw3 r3)
-    (connected r5  hw3) (connected hw3 r5)
     (connected r6  hw4) (connected hw4 r6)
 
     ;; key & item locations
