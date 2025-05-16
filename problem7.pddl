@@ -2,7 +2,7 @@
   (:domain rooms-two-hands)
   (:objects
     c1                              - character
-    hand1 hand2                     - hand
+    handLeft handRight              - hand
     red-key blue-key green-key      - key
     treasure                        - item
     r1 r2 r3 r4 r5 r6 hw1 hw2 hw3 hw4 - room
@@ -10,8 +10,8 @@
 
   (:init
     ;; two free hands
-    (free-hand c1 hand1)
-    (free-hand c1 hand2)
+    (free-hand c1 handLeft)
+    (free-hand c1 handRight)
 
     ;; always-open connections
     (connected r1  hw1) (connected hw1 r1)

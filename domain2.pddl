@@ -2,7 +2,7 @@
   (:requirements :adl :typing)
   (:types
     key item    - holdable
-    character room
+    character room 
     hand
   )
 
@@ -38,9 +38,9 @@
       (in ?what ?at)
     )
     :effect (and
+      (holds ?who ?h ?what)
       (not (free-hand ?who ?h))
       (not (in ?what ?at))
-      (holds ?who ?h ?what)
     )
   )
 
